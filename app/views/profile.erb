@@ -1,0 +1,43 @@
+<div class="container">
+  <h1>The other Hacker News</h1>
+</div>
+
+<div class="profile">
+  <table>
+    <tr>
+      <td>username:</td>
+      <td><%= @user.name %></td>
+    </tr>
+
+    <tr>
+      <td>email:</td>
+      <td><%= @user.email %></td>
+    </tr>
+
+    <tr>
+      <td>created at:</td>
+      <td><%= @user.created_at %></td>
+    </tr>
+
+    <tr>
+      <td>Post history:</td>
+      <% if @user %>
+      <td><% @user.posts.each do |post| %>
+        <%= post.title %>(<%= post.url %>)<br>
+      <% end %>
+      <% end %></td>
+    </tr>
+
+    <tr>
+      <td>Comment history:</td>
+      <% if @user %>
+      <td><% @user.comments.each do |comment| %>
+        <%= comment.text %><br>
+      <% end %>
+      <% end %></td>
+    </tr>
+
+
+
+  </table>
+</div>

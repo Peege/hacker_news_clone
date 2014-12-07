@@ -1,0 +1,45 @@
+.container {
+  margin: 20px auto;
+  width: 700px;
+  margin-top: 10px;
+  vertical-align: center;
+  background-color: #0ACF00;
+}
+
+.container h1 {
+  font-size: medium;
+  vertical-align: center;
+}
+
+.container p {
+  text-align: right;
+  vertical-align: center;
+}
+
+th {
+  text-align: left;
+}
+
+.entry {
+  margin: 20px auto;
+  width: 700px;
+}
+
+.entry a {
+  text-decoration: none;
+}
+
+.profile {
+  margin: 20px auto;
+  width: 700px;
+}
+
+.box {
+  margin: 20px auto;
+  width: 700px;
+}
+
+.box1 {
+  margin: 20px auto;
+  width: 700px;
+}
